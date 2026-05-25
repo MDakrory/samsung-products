@@ -1,0 +1,58 @@
+[
+  {
+    "id": "washer",
+    "nameAr": "غسالات",
+    "nameEn": "Washers",
+    "icon": "washer",
+    "subcategories": [
+      { "id": "combo", "nameAr": "كومبو", "nameEn": "Combo" },
+      { "id": "front", "nameAr": "تحميل أمامي", "nameEn": "Front Load" },
+      { "id": "top-load", "nameAr": "تحميل علوي", "nameEn": "Top Load" },
+      { "id": "dryer", "nameAr": "نشافة", "nameEn": "Dryer" }
+    ]
+  },
+  {
+    "id": "refrigerator",
+    "nameAr": "ثلاجات",
+    "nameEn": "Refrigerators",
+    "icon": "fridge",
+    "subcategories": [
+      { "id": "sbs", "nameAr": "بابين جانبي", "nameEn": "Side by Side" },
+      { "id": "tmf", "nameAr": "باب علوي", "nameEn": "Top Mount Freezer" },
+      { "id": "1door", "nameAr": "باب واحد", "nameEn": "1 Door" },
+      { "id": "french-door", "nameAr": "أربعة أبواب", "nameEn": "French Door" }
+    ]
+  },
+  {
+    "id": "air-conditioner",
+    "nameAr": "مكيفات",
+    "nameEn": "Air Conditioners",
+    "icon": "ac",
+    "subcategories": [
+      { "id": "windfree-mds", "nameAr": "WindFree بمستشعر حركة", "nameEn": "WindFree MDS" },
+      { "id": "windfree", "nameAr": "WindFree", "nameEn": "WindFree" },
+      { "id": "digital-inverter", "nameAr": "انفيرتر رقمي", "nameEn": "Digital Inverter" }
+    ]
+  },
+  {
+    "id": "dishwasher",
+    "nameAr": "غسالات صحون",
+    "nameEn": "Dishwashers",
+    "icon": "dishwasher",
+    "subcategories": []
+  },
+  {
+    "id": "oven",
+    "nameAr": "أفران كهربائية",
+    "nameEn": "Electric Ovens",
+    "icon": "oven",
+    "subcategories": []
+  },
+  {
+    "id": "microwave",
+    "nameAr": "ميكروويف",
+    "nameEn": "Microwaves",
+    "icon": "microwave",
+    "subcategories": []
+  }
+]

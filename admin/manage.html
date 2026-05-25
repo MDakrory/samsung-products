@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SKU Manager | Samsung</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+  </head>
+  <body data-page="admin-manage">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html" aria-label="Samsung">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+        </a>
+        <div class="header-actions">
+          <a class="button button-secondary button-small" href="qr-generator.html">QR</a>
+          <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container admin-shell">
+      <h1 class="page-title" data-ar="إدارة المنتجات" data-en="SKU Manager">إدارة المنتجات</h1>
+
+      <div class="admin-tabs" role="tablist">
+        <button class="tab-button is-active" type="button" data-tab-target="list" data-ar="قائمة المنتجات" data-en="Product List">قائمة المنتجات</button>
+        <button class="tab-button" type="button" data-tab-target="form" data-ar="إضافة / تعديل" data-en="Add / Edit Product">إضافة / تعديل</button>
+        <button class="tab-button" type="button" data-tab-target="publish" data-ar="حفظ ونشر" data-en="Save & Publish">حفظ ونشر</button>
+      </div>
+
+      <section id="tab-list" class="admin-panel is-active">
+        <div class="filter-row">
+          <label class="field">
+            <span data-ar="بحث" data-en="Search">بحث</span>
+            <input id="admin-search" type="search" placeholder="SKU / title">
+          </label>
+          <label class="field">
+            <span data-ar="القسم" data-en="Category">القسم</span>
+            <select id="admin-category-filter"></select>
+          </label>
+          <button id="new-product-btn" class="button" type="button" data-ar="منتج جديد" data-en="New Product">منتج جديد</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th data-ar="الاسم المختصر" data-en="Short Title">الاسم المختصر</th>
+                <th data-ar="القسم" data-en="Category">القسم</th>
+                <th data-ar="التصنيف الفرعي" data-en="Subcategory">التصنيف الفرعي</th>
+                <th data-ar="نشط" data-en="Active">نشط</th>
+                <th data-ar="إجراءات" data-en="Actions">إجراءات</th>
+              </tr>
+            </thead>
+            <tbody id="admin-product-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="tab-form" class="admin-panel">
+        <form id="product-form">
+          <input id="edit-index" type="hidden" value="">
+          <div class="field-grid">
+            <label class="field">
+              <span>SKU *</span>
+              <input id="sku" required>
+            </label>
+            <label class="field">
+              <span data-ar="القسم *" data-en="Category *">القسم *</span>
+              <select id="category" required></select>
+            </label>
+            <label class="field">
+              <span data-ar="التصنيف الفرعي" data-en="Subcategory">التصنيف الفرعي</span>
+              <select id="subcategory"></select>
+            </label>
+            <label class="field">
+              <span data-ar="رابط الصورة" data-en="Image URL">رابط الصورة</span>
+              <input id="imageUrl">
+            </label>
+            <label class="field">
+              <span data-ar="العنوان العربي *" data-en="Title AR *">العنوان العربي *</span>
+              <input id="titleAr" required>
+            </label>
+            <label class="field">
+              <span data-ar="العنوان الإنجليزي *" data-en="Title EN *">العنوان الإنجليزي *</span>
+              <input id="titleEn" required>
+            </label>
+            <label class="field">
+              <span data-ar="الاسم المختصر عربي" data-en="Short Title AR">الاسم المختصر عربي</span>
+              <input id="shortTitleAr">
+            </label>
+            <label class="field">
+              <span data-ar="الاسم المختصر إنجليزي" data-en="Short Title EN">الاسم المختصر إنجليزي</span>
+              <input id="shortTitleEn">
+            </label>
+            <label class="field">
+              <span data-ar="الوصف العربي" data-en="Description AR">الوصف العربي</span>
+              <textarea id="descriptionAr"></textarea>
+            </label>
+            <label class="field">
+              <span data-ar="الوصف الإنجليزي" data-en="Description EN">الوصف الإنجليزي</span>
+              <textarea id="descriptionEn"></textarea>
+            </label>
+          </div>
+
+          <h2 data-ar="المزايا" data-en="Highlights">المزايا</h2>
+          <div id="highlight-editor" class="highlight-editor"></div>
+          <button id="add-highlight-btn" class="button button-secondary" type="button" data-ar="إضافة ميزة" data-en="Add Highlight">إضافة ميزة</button>
+
+          <label class="field">
+            <span data-ar="نشط" data-en="Active">نشط</span>
+            <label class="switch">
+              <input id="active" type="checkbox" checked>
+              <span></span>
+            </label>
+          </label>
+
+          <div class="form-actions">
+            <button class="button" type="submit" data-ar="حفظ المنتج" data-en="Save Product">حفظ المنتج</button>
+            <button id="reset-form-btn" class="button button-secondary" type="button" data-ar="مسح النموذج" data-en="Reset Form">مسح النموذج</button>
+          </div>
+          <p id="form-message" class="message" hidden></p>
+        </form>
+      </section>
+
+      <section id="tab-publish" class="admin-panel">
+        <h2 data-ar="تحميل JSON" data-en="Download JSON">تحميل JSON</h2>
+        <button id="download-json-btn" class="button" type="button" data-ar="Download products.json" data-en="Download products.json">Download products.json</button>
+
+        <h2 data-ar="النشر إلى GitHub" data-en="Publish to GitHub">النشر إلى GitHub</h2>
+        <p class="security-note" data-ar="رمز GitHub محفوظ فقط في التخزين المحلي للمتصفح على هذا الجهاز. لا يتم إرساله إلى أي خادم باستثناء GitHub." data-en="Your GitHub token is stored only in your browser's local storage on this device. It is never sent to any server other than GitHub.">رمز GitHub محفوظ فقط في التخزين المحلي للمتصفح على هذا الجهاز. لا يتم إرساله إلى أي خادم باستثناء GitHub.</p>
+        <div class="field-grid">
+          <label class="field">
+            <span data-ar="مستودع GitHub" data-en="GitHub Repository">مستودع GitHub</span>
+            <input id="github-repo" placeholder="username/samsung-products">
+          </label>
+          <label class="field">
+            <span data-ar="رمز الوصول" data-en="Personal Access Token">رمز الوصول</span>
+            <input id="github-token" type="password">
+          </label>
+        </div>
+        <div class="form-actions">
+          <button id="publish-github-btn" class="button" type="button" data-ar="Publish to GitHub" data-en="Publish to GitHub">Publish to GitHub</button>
+          <a class="button button-secondary" href="https://github.com/settings/tokens" target="_blank" rel="noopener" data-ar="إنشاء رمز GitHub" data-en="Create GitHub Token">إنشاء رمز GitHub</a>
+        </div>
+        <p id="publish-message" class="message" hidden></p>
+      </section>
+    </main>
+
+    <script src="../assets/js/lang.js"></script>
+    <script src="../assets/js/router.js"></script>
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>

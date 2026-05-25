@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code Generator | Samsung</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+  </head>
+  <body data-page="admin-qr">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html" aria-label="Samsung">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+        </a>
+        <div class="header-actions">
+          <a class="button button-secondary button-small" href="manage.html" data-ar="الإدارة" data-en="Manage">الإدارة</a>
+          <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container admin-shell">
+      <h1 class="page-title">QR Code Generator</h1>
+      <section class="admin-panel is-active">
+        <div class="qr-controls">
+          <label class="field">
+            <span>Store ID</span>
+            <input id="store-id" placeholder="riyadh_mall_01">
+          </label>
+          <label class="field">
+            <span>Base site URL</span>
+            <input id="base-url" placeholder="https://username.github.io/samsung-products">
+          </label>
+          <label class="field">
+            <span data-ar="القسم" data-en="Category">القسم</span>
+            <select id="qr-category"></select>
+          </label>
+          <label class="field">
+            <span data-ar="المنتجات النشطة فقط" data-en="Active products only">المنتجات النشطة فقط</span>
+            <label class="switch">
+              <input id="active-only" type="checkbox" checked>
+              <span></span>
+            </label>
+          </label>
+          <button id="generate-qr-btn" class="button" type="button">Generate QR Codes</button>
+          <button id="download-zip-btn" class="button button-secondary" type="button">Download All as ZIP</button>
+        </div>
+        <p id="qr-message" class="message" hidden></p>
+        <div id="qr-grid" class="qr-grid"></div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="../assets/js/lang.js"></script>
+    <script src="../assets/js/router.js"></script>
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>

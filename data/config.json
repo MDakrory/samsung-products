@@ -1,0 +1,13 @@
+{
+  "siteName": {
+    "ar": "سامسونج — دليل المنتجات",
+    "en": "Samsung — Product Guide"
+  },
+  "defaultLang": "ar",
+  "samsungLogoUrl": "https://www.pngarts.com/files/3/Samsung-Logo-PNG-Transparent-Image.png",
+  "googleAnalyticsMeasurementId": "G-XXXXXXXXXX",
+  "feedbackFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfnqd0RVWrBnralTRs36nz9DMWmreuxaf3YWR__Oi7nRhHImg/viewform?embedded=true",
+  "baseSiteUrl": "",
+  "githubRepo": "",
+  "githubToken": ""
+}

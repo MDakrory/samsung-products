@@ -1,0 +1,37 @@
+html[dir="rtl"] {
+  text-align: right;
+}
+
+html[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .header-inner,
+html[dir="rtl"] .footer-inner {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .related-strip {
+  direction: rtl;
+}
+
+html[dir="rtl"] .product-card,
+html[dir="rtl"] .highlight-card,
+html[dir="rtl"] .admin-panel,
+html[dir="rtl"] .qr-tile {
+  text-align: right;
+}
+
+html[dir="rtl"] .form-actions,
+html[dir="rtl"] .filter-row,
+html[dir="rtl"] .admin-tabs,
+html[dir="rtl"] .qr-controls {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .badge-row,
+html[dir="rtl"] .pill-tabs {
+  justify-content: flex-start;
+}
