@@ -3,7 +3,7 @@
   const fallbackImage =
     "data:image/svg+xml;charset=UTF-8," +
     encodeURIComponent(
-      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420"><rect width="640" height="420" fill="#f0f4ff"/><text x="50%" y="47%" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#1428A0">SAMSUNG</text><text x="50%" y="60%" text-anchor="middle" font-family="Arial" font-size="22" fill="#666">Product image</text></svg>',
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420"><rect width="640" height="420" fill="#f7f8fb"/><rect x="0" y="0" width="640" height="10" fill="#1428A0"/><text x="50%" y="47%" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#000">SAMSUNG</text><text x="50%" y="60%" text-anchor="middle" font-family="Arial" font-size="22" fill="#666">Product image</text></svg>',
     );
 
   let currentCategory = null;

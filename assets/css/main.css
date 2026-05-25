@@ -5,12 +5,15 @@
   --samsung-blue-light: #2d49c8;
   --samsung-black: #000000;
   --samsung-white: #ffffff;
+  --samsung-ink: #111111;
+  --samsung-charcoal: #181818;
   --gray-light: #f5f5f5;
   --gray-mid: #e0e0e0;
   --gray-text: #666666;
-  --highlight-bg: #f0f4ff;
-  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  --card-shadow-hover: 0 6px 24px rgba(20, 40, 160, 0.15);
+  --highlight-bg: #f7f8fb;
+  --accent-bg: #eef3ff;
+  --card-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.16);
   --radius: 12px;
   --radius-sm: 8px;
   --transition: all 0.2s ease;
@@ -28,7 +31,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--samsung-white);
+  background: #fbfbfb;
   color: var(--samsung-black);
   font-family: "Outfit", "Noto Sans Arabic", system-ui, sans-serif;
   line-height: 1.6;
@@ -66,8 +69,8 @@ select {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.94);
-  border-bottom: 1px solid var(--gray-mid);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #d8d8d8;
   backdrop-filter: blur(16px);
 }
 
@@ -84,11 +87,11 @@ select {
   align-items: center;
   gap: 0.75rem;
   font-weight: 800;
-  color: var(--samsung-blue);
+  color: var(--samsung-black);
 }
 
 .logo img {
-  width: 108px;
+  width: 118px;
   height: auto;
 }
 
@@ -123,7 +126,7 @@ select {
   gap: 0.5rem;
   min-height: 44px;
   padding: 0.7rem 1rem;
-  background: var(--samsung-blue);
+  background: var(--samsung-black);
   color: var(--samsung-white);
   font-weight: 700;
 }
@@ -135,8 +138,9 @@ select {
 }
 
 .button-secondary {
-  background: var(--gray-light);
+  background: var(--samsung-white);
   color: var(--samsung-black);
+  border: 1px solid var(--gray-mid);
 }
 
 .button-danger {
@@ -150,7 +154,9 @@ select {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--samsung-blue), var(--samsung-blue-light));
+  background:
+    radial-gradient(circle at 12% 0%, rgba(20, 40, 160, 0.42), transparent 28%),
+    linear-gradient(135deg, #000000 0%, #171717 58%, #0b1029 100%);
   color: var(--samsung-white);
   padding: clamp(2.2rem, 8vw, 6rem) 0;
 }
@@ -197,7 +203,7 @@ select {
   min-height: 136px;
   padding: 0.95rem;
   background: var(--samsung-white);
-  border: 1px solid var(--gray-mid);
+  border: 1px solid #dedede;
   border-radius: var(--radius);
   box-shadow: var(--card-shadow);
   transition: var(--transition);
@@ -205,7 +211,7 @@ select {
 
 .category-card:hover,
 .product-card:hover {
-  border-color: rgba(20, 40, 160, 0.28);
+  border-color: rgba(0, 0, 0, 0.32);
   box-shadow: var(--card-shadow-hover);
   transform: translateY(-2px);
 }
@@ -216,8 +222,8 @@ select {
   height: 44px;
   align-items: center;
   justify-content: center;
-  color: var(--samsung-blue);
-  background: var(--highlight-bg);
+  color: var(--samsung-black);
+  background: var(--accent-bg);
   border-radius: var(--radius-sm);
 }
 
@@ -250,8 +256,11 @@ select {
 }
 
 .breadcrumb a {
-  color: var(--samsung-blue);
+  color: var(--samsung-black);
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--samsung-blue);
+  text-underline-offset: 0.2em;
 }
 
 .page-title {
@@ -278,8 +287,8 @@ select {
 }
 
 .pill.is-active {
-  border-color: var(--samsung-blue);
-  background: var(--samsung-blue);
+  border-color: var(--samsung-black);
+  background: var(--samsung-black);
   color: var(--samsung-white);
 }
 
@@ -288,7 +297,7 @@ select {
   display: flex;
   flex-direction: column;
   background: var(--samsung-white);
-  border: 1px solid var(--gray-mid);
+  border: 1px solid #dedede;
   border-radius: var(--radius);
   box-shadow: var(--card-shadow);
   transition: var(--transition);
@@ -347,7 +356,7 @@ select {
   max-width: 100%;
   padding: 0.28rem 0.55rem;
   border-radius: 999px;
-  background: var(--highlight-bg);
+  background: var(--accent-bg);
   color: var(--samsung-blue);
   font-size: 0.78rem;
   font-weight: 700;
@@ -364,8 +373,11 @@ select {
 .back-link {
   display: inline-flex;
   margin-top: 1.5rem;
-  color: var(--samsung-blue);
+  color: var(--samsung-black);
   font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--samsung-blue);
+  text-underline-offset: 0.24em;
 }
 
 .product-copy h1 {
@@ -393,7 +405,7 @@ select {
   align-items: center;
   min-height: 34px;
   padding: 0.35rem 0.65rem;
-  border: 1px solid var(--gray-mid);
+  border: 1px solid #d8d8d8;
   border-radius: 999px;
   background: var(--samsung-white);
   color: #333333;
@@ -439,7 +451,7 @@ select {
 
 .highlight-card {
   padding: 1rem;
-  border-inline-start: 5px solid var(--samsung-blue);
+  border-inline-start: 5px solid var(--samsung-black);
   border-radius: var(--radius-sm);
   background: var(--highlight-bg);
 }
@@ -495,8 +507,8 @@ select {
   margin: 0 0 1rem;
   padding: 0.9rem 1rem;
   border-radius: var(--radius-sm);
-  background: var(--highlight-bg);
-  color: var(--samsung-blue);
+  background: var(--accent-bg);
+  color: var(--samsung-black);
   font-weight: 800;
 }
 
@@ -525,8 +537,11 @@ select {
 }
 
 .footer-inner a {
-  color: var(--samsung-blue);
+  color: var(--samsung-black);
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--samsung-blue);
+  text-underline-offset: 0.2em;
 }
 
 .admin-shell {
@@ -555,8 +570,8 @@ select {
 }
 
 .tab-button.is-active {
-  border-color: var(--samsung-blue);
-  background: var(--samsung-blue);
+  border-color: var(--samsung-black);
+  background: var(--samsung-black);
   color: var(--samsung-white);
 }
 
@@ -659,7 +674,7 @@ th {
 }
 
 .switch input:checked + span {
-  background: var(--samsung-blue);
+  background: var(--samsung-black);
 }
 
 .switch input:checked + span::after {
@@ -689,8 +704,8 @@ html[dir="rtl"] .switch input:checked + span::after {
   margin-top: 1rem;
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
-  background: var(--highlight-bg);
-  color: var(--samsung-blue);
+  background: var(--accent-bg);
+  color: var(--samsung-black);
   font-weight: 700;
 }
 
@@ -702,7 +717,7 @@ html[dir="rtl"] .switch input:checked + span::after {
 .security-note {
   padding: 1rem;
   border-radius: var(--radius-sm);
-  background: var(--highlight-bg);
+  background: var(--accent-bg);
   color: #25315f;
 }
 
