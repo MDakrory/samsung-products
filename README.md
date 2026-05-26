@@ -69,7 +69,7 @@ In Google Analytics, open Reports -> Engagement -> Events -> `store_qr_scan`, th
 
 ## Admin Publishing Security
 
-The admin tool lives in `local-admin/`, and the GitHub Pages workflow excludes it from the published site. Keep Pages configured to **GitHub Actions**, not branch/root publishing. If you deploy to another static host manually, do not upload `local-admin/`.
+The admin tool lives in the local-only `local-admin/` folder on your computer. It is ignored by git and must not be uploaded to any public host.
 
 The GitHub repository name and token entered in `local-admin/manage.html` are saved only in this browser's `localStorage` on this device. They are sent only to the GitHub Contents API when Publish to GitHub is clicked.
 
