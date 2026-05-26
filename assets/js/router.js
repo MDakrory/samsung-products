@@ -16,7 +16,7 @@
   }
 
   function getDataPath(file) {
-    const inAdmin = window.location.pathname.includes("/admin/");
+    const inAdmin = /\/(?:admin|local-admin)\//.test(window.location.pathname);
     return `${inAdmin ? "../" : ""}data/${file}`;
   }
 

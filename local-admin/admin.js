@@ -372,7 +372,9 @@
 
   function defaultBaseUrl() {
     if (config.baseSiteUrl) return config.baseSiteUrl;
-    const path = window.location.pathname.replace(/\/admin\/qr-generator\.html$/, "/").replace(/\/admin\/$/, "/");
+    const path = window.location.pathname
+      .replace(/\/(?:admin|local-admin)\/qr-generator\.html$/, "/")
+      .replace(/\/(?:admin|local-admin)\/$/, "/");
     return `${window.location.origin}${path}`.replace(/\/$/, "");
   }
 

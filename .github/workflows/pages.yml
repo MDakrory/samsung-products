@@ -28,10 +28,22 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare public artifact
+        run: |
+          mkdir public
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='admin/' \
+            --exclude='local-admin/' \
+            --exclude='samsung-products-site.zip' \
+            --exclude='public/' \
+            ./ public/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment

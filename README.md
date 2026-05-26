@@ -7,22 +7,24 @@ Static bilingual Samsung product catalogue for QR-driven in-store browsing. All 
 1. Create a GitHub account, then create a new public repository named `samsung-products`.
 2. Upload all project files to the repository.
 3. Go to Settings -> Pages.
-4. Set Source to branch `main` and folder `/root`, then save.
-5. The site will be live at `https://[username].github.io/samsung-products`.
-6. Open `data/config.json` and replace `G-XXXXXXXXXX` with your GA4 Measurement ID.
-7. Open `data/config.json` and replace the feedback form URL with your embedded Google Form URL.
+4. Set Source to **GitHub Actions**.
+5. Push to the `main` branch. The included workflow publishes only the public catalogue files.
+6. The site will be live at `https://[username].github.io/samsung-products`.
+7. Open `data/config.json` and replace `G-XXXXXXXXXX` with your GA4 Measurement ID.
+8. Open `data/config.json` and replace the feedback form URL with your embedded Google Form URL.
 
 ## Add a New Product
 
-### Option A: Admin Panel (recommended)
+### Option A: Local Admin Panel (recommended)
 
-1. Open `https://[your-site]/admin/manage.html`.
-2. Click the Add / Edit Product tab.
-3. Fill in the form. Fields marked with `*` are required.
-4. Click Save Product.
-5. Go to the Save & Publish tab.
-6. Click Publish to GitHub, or download `products.json` and upload it manually.
-7. The product appears on the site within about 1 minute after GitHub Pages updates.
+1. Run a local static server from this folder.
+2. Open `http://localhost:8000/local-admin/manage.html`.
+3. Click the Add / Edit Product tab.
+4. Fill in the form. Fields marked with `*` are required.
+5. Click Save Product.
+6. Go to the Save & Publish tab.
+7. Click Publish to GitHub, or download `products.json` and upload it manually.
+8. The product appears on the site within about 1 minute after GitHub Pages updates.
 
 ### Option B: Direct JSON edit
 
@@ -51,7 +53,7 @@ Copy all files to any static web host such as Netlify, Vercel, cPanel, Apache, o
 
 ## QR Code Tracking
 
-Use `admin/qr-generator.html` to generate QR URLs in this format:
+Use `local-admin/qr-generator.html` to generate QR URLs in this format:
 
 ```text
 product.html?sku={SKU}&store={storeId}
@@ -67,7 +69,9 @@ In Google Analytics, open Reports -> Engagement -> Events -> `store_qr_scan`, th
 
 ## Admin Publishing Security
 
-The GitHub repository name and token entered in `admin/manage.html` are saved only in this browser's `localStorage` on this device. They are sent only to the GitHub Contents API when Publish to GitHub is clicked.
+The admin tool lives in `local-admin/`, and the GitHub Pages workflow excludes it from the published site. Keep Pages configured to **GitHub Actions**, not branch/root publishing. If you deploy to another static host manually, do not upload `local-admin/`.
+
+The GitHub repository name and token entered in `local-admin/manage.html` are saved only in this browser's `localStorage` on this device. They are sent only to the GitHub Contents API when Publish to GitHub is clicked.
 
 ## Local Testing
 
