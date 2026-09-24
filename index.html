@@ -2,46 +2,51 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
     <title>سامسونج — دليل المنتجات</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/rtl.css">
   </head>
   <body data-page="home">
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="index.html" aria-label="Samsung">
-          <img src="assets/samsung-logo.svg" alt="Samsung">
-        </a>
-        <div class="header-actions">
-          <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
-        </div>
-      </div>
-    </header>
+    <div id="site-header"></div>
 
-    <main>
+    <main id="main">
       <section class="hero">
-        <div class="container">
-          <h1 data-ar="اكتشف منتجات سامسونج" data-en="Discover Samsung Products">اكتشف منتجات سامسونج</h1>
-          <p data-ar="تقنية ذكية لحياة أفضل" data-en="Smart technology for a better life">تقنية ذكية لحياة أفضل</p>
+        <div class="container hero-inner">
+          <span class="hero-eyebrow" data-ar="دليل المنتجات" data-en="Product Guide">دليل المنتجات</span>
+          <h1 id="hero-title">اكتشف منتجات سامسونج</h1>
+          <p id="hero-subtitle">تقنية ذكية لحياة أفضل</p>
+          <button id="hero-search" class="hero-search" type="button" hidden>
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span data-ar="ابحث باسم المنتج أو رقم الموديل" data-en="Search by product name or model">ابحث باسم المنتج أو رقم الموديل</span>
+          </button>
+          <div id="hero-stats" class="hero-stats"></div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="categories">
         <div class="container">
-          <h2 class="section-title" data-ar="الأقسام" data-en="Categories">الأقسام</h2>
+          <div class="section-head">
+            <h2 data-ar="تسوق حسب القسم" data-en="Shop by category">تسوق حسب القسم</h2>
+          </div>
           <div id="category-grid" class="category-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="featured-section" hidden>
+        <div class="container">
+          <div class="section-head">
+            <h2 data-ar="منتجات مميزة" data-en="Featured products">منتجات مميزة</h2>
+          </div>
+          <div id="featured-grid" class="product-grid"></div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span data-ar="© 2026 سامسونج — دليل المنتجات" data-en="© 2026 Samsung — Product Guide">© 2026 سامسونج — دليل المنتجات</span>
-        <a href="feedback.html" data-ar="آراؤكم تهمنا" data-en="Feedback">آراؤكم تهمنا</a>
-      </div>
-    </footer>
+    <div id="site-footer"></div>
 
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/lang.js"></script>
     <script src="assets/js/analytics.js"></script>
     <script src="assets/js/router.js"></script>

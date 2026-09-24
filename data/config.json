@@ -6,8 +6,15 @@
   "defaultLang": "ar",
   "samsungLogoUrl": "assets/samsung-logo.svg",
   "googleAnalyticsMeasurementId": "G-XXXXXXXXXX",
+  "feedbackEnabled": false,
+  "showFeedbackOnProduct": false,
   "feedbackFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfnqd0RVWrBnralTRs36nz9DMWmreuxaf3YWR__Oi7nRhHImg/viewform?embedded=true",
-  "baseSiteUrl": "",
-  "githubRepo": "",
-  "githubToken": ""
+  "showSearch": true,
+  "showFeatured": true,
+  "showRelated": true,
+  "heroTitleAr": "اكتشف منتجات سامسونج",
+  "heroTitleEn": "Discover Samsung Products",
+  "heroSubtitleAr": "تقنية ذكية لحياة أفضل",
+  "heroSubtitleEn": "Smart technology for a better life",
+  "baseSiteUrl": "https://samsung-products.com"
 }

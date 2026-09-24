@@ -13,25 +13,32 @@ Static bilingual Samsung product catalogue for QR-driven in-store browsing. All 
 7. Open `data/config.json` and replace `G-XXXXXXXXXX` with your GA4 Measurement ID.
 8. Open `data/config.json` and replace the feedback form URL with your embedded Google Form URL.
 
-## Add a New Product
+## Run Locally
 
-### Option A: Local Admin Panel (recommended)
+```powershell
+python local-admin/serve.py
+```
 
-1. Run a local static server from this folder.
-2. Open `http://localhost:8000/local-admin/manage.html`.
-3. Click the Add / Edit Product tab.
-4. Fill in the form. Fields marked with `*` are required.
-5. Click Save Product.
-6. Go to the Save & Publish tab.
-7. Click Publish to GitHub, or download `products.json` and upload it manually.
-8. The product appears on the site within about 1 minute after GitHub Pages updates.
+- Site: `http://localhost:8000`
+- Admin: `http://localhost:8000/local-admin/manage.html`
 
-### Option B: Direct JSON edit
+`serve.py` disables browser caching so edits show up on refresh. Any static server works for the public site (`python -m http.server 8000`), but may serve stale files.
 
-1. Open `data/products.json`.
-2. Add a new object following the existing product schema.
-3. Save and upload the file to GitHub.
-4. Done. No other files need to change.
+## Admin Panel (local only)
+
+| Section | What it does |
+| --- | --- |
+| Dashboard | Totals, products per category, data-quality checks (broken images, missing titles/descriptions), quick feedback on/off |
+| Products | Search, filter, sort; show/hide, feature, duplicate, edit, delete; select many rows for bulk show/hide/feature/move/delete |
+| Bulk import / export | Export all products to Excel/CSV, edit, re-upload. Preview shows new / updated / unchanged / errors before applying. Options: add only, update only, or both; hide or delete products missing from the file; paste a list of models to show/hide/feature/delete |
+| Categories | Rename, reorder, change icon or cover image, manage subcategories |
+| Site settings | Show/hide the feedback page and product feedback button, feedback form URL, homepage text, search/featured/related sections, default language, GA ID |
+| QR codes | Per-product QR codes with store ID; download ZIP or print |
+| Save & publish | Save straight into the `data` folder (Chrome/Edge), publish changed files to GitHub, download files, backup/restore |
+
+Unsaved changes are kept as a draft in the browser until you save, so a refresh does not lose work.
+
+The Excel import accepts the admin's own template and the "Creation - New Content" sheet format (SKU, Product, Sub Category, Long Description/Title, Short Ar/EN, Description, Highlight 1..7). A highlight cell's first line is the title; the following lines are the body.
 
 ## Remove / Hide a Product
 
@@ -53,7 +60,7 @@ Copy all files to any static web host such as Netlify, Vercel, cPanel, Apache, o
 
 ## QR Code Tracking
 
-Use `local-admin/qr-generator.html` to generate QR URLs in this format:
+Use the QR codes section of the admin panel to generate QR URLs in this format:
 
 ```text
 product.html?sku={SKU}&store={storeId}
@@ -71,14 +78,4 @@ In Google Analytics, open Reports -> Engagement -> Events -> `store_qr_scan`, th
 
 The admin tool lives in the local-only `local-admin/` folder on your computer. It is ignored by git and must not be uploaded to any public host.
 
-The GitHub repository name and token entered in `local-admin/manage.html` are saved only in this browser's `localStorage` on this device. They are sent only to the GitHub Contents API when Publish to GitHub is clicked.
-
-## Local Testing
-
-Because browsers often block JSON loading from `file://`, test the full dynamic catalogue through any small static server from the project root. For example:
-
-```powershell
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
+The GitHub repository name is saved in this browser's `localStorage`. The token is kept for the session only unless "Remember token on this device" is ticked. It is sent only to the GitHub Contents API when Publish to GitHub is clicked. Never put a token in `data/config.json` — that file is public.

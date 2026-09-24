@@ -2,33 +2,25 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
     <title>المنتج | Samsung</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/rtl.css">
   </head>
   <body data-page="product">
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="index.html" aria-label="Samsung">
-          <img src="assets/samsung-logo.svg" alt="Samsung">
-        </a>
-        <div class="header-actions">
-          <a id="product-back" class="button button-secondary button-small" href="index.html" data-ar="رجوع" data-en="Back">رجوع</a>
-          <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
-        </div>
+    <div id="site-header"></div>
+
+    <main id="main" class="container page">
+      <div id="product-detail" aria-live="polite">
+        <div class="product-hero is-skeleton"><div class="product-gallery"></div><div class="product-info"><span></span><span></span><span></span></div></div>
       </div>
-    </header>
+    </main>
+    <div id="product-actionbar" class="actionbar" hidden></div>
 
-    <main id="product-detail" class="container" aria-live="polite"></main>
+    <div id="site-footer"></div>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span data-ar="© 2026 سامسونج — دليل المنتجات" data-en="© 2026 Samsung — Product Guide">© 2026 سامسونج — دليل المنتجات</span>
-        <a href="feedback.html" data-ar="آراؤكم تهمنا" data-en="Feedback">آراؤكم تهمنا</a>
-      </div>
-    </footer>
-
+    <script src="assets/js/layout.js"></script>
     <script src="assets/js/lang.js"></script>
     <script src="assets/js/analytics.js"></script>
     <script src="assets/js/router.js"></script>
