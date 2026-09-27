@@ -12,7 +12,7 @@
     config: {},
     subcategory: null,
     sort: "default",
-    trackedSku: null,
+    trackedKey: null,
   };
 
   /* ---------- data ---------- */
@@ -59,9 +59,20 @@
   }
 
   const isVisible = (product) => product.active !== false;
+  const skuKey = (sku) => String(sku || "").trim().toUpperCase();
+  const productKey = (product) => product.id || product.sku;
 
-  function findProduct(products, sku) {
-    return products.find((product) => product.sku === sku && isVisible(product));
+  // Links use the permanent product id. Old ?sku= links keep working, including
+  // SKUs that were later renamed (kept in formerSkus).
+  function findProduct(products, id, sku) {
+    const visible = products.filter(isVisible);
+    if (id) return visible.find((product) => product.id === id);
+    const key = skuKey(sku);
+    if (!key) return undefined;
+    return (
+      visible.find((product) => skuKey(product.sku) === key) ||
+      visible.find((product) => (product.formerSkus || []).some((former) => skuKey(former) === key))
+    );
   }
 
   function filterProducts(products, categoryId, subcategoryId = null) {
@@ -73,8 +84,8 @@
     );
   }
 
-  function getRelated(products, currentSku, subcategory, category) {
-    const pool = products.filter((product) => isVisible(product) && product.sku !== currentSku && product.category === category);
+  function getRelated(products, currentKey, subcategory, category) {
+    const pool = products.filter((product) => isVisible(product) && productKey(product) !== currentKey && product.category === category);
     const sameSub = pool.filter((product) => subcategory && product.subcategory === subcategory);
     const rest = pool.filter((product) => !sameSub.includes(product));
     return [...sameSub, ...rest].slice(0, 8);
@@ -162,7 +173,7 @@
   }
 
   function productUrl(product, storeId = "") {
-    const params = new URLSearchParams({ sku: product.sku });
+    const params = new URLSearchParams(product.id ? { id: product.id } : { sku: product.sku });
     if (storeId) params.set("store", storeId);
     return `product.html?${params.toString()}`;
   }
@@ -508,9 +519,8 @@
   }
 
   function renderProduct() {
-    const sku = getParam("sku");
     const storeId = getParam("store") || sessionStorage.getItem("utm_store") || "";
-    const product = findProduct(state.products, sku);
+    const product = findProduct(state.products, getParam("id"), getParam("sku"));
     const target = document.getElementById("product-detail");
     const actionBar = document.getElementById("product-actionbar");
     if (!target) return;
@@ -527,12 +537,17 @@
       return;
     }
 
+    // An old ?sku= link or QR code: show the permanent id link in the address bar instead.
+    if (!getParam("id") && product.id) {
+      history.replaceState(null, "", productUrl(product, getParam("store") || ""));
+    }
+
     const category = categoryOf(product);
     const sub = subcategoryOf(product);
     const highlights = product.highlights || [];
-    const related = state.config.showRelated === false ? [] : getRelated(state.products, product.sku, product.subcategory, product.category);
+    const related = state.config.showRelated === false ? [] : getRelated(state.products, productKey(product), product.subcategory, product.category);
     const showFeedback = feedbackEnabled() && state.config.showFeedbackOnProduct !== false;
-    const feedbackUrl = `feedback.html?sku=${encodeURIComponent(product.sku)}`;
+    const feedbackUrl = `feedback.html?${new URLSearchParams(product.id ? { id: product.id } : { sku: product.sku })}`;
     const categoryUrl = category ? `category.html?cat=${encodeURIComponent(category.id)}` : "index.html";
     document.title = `${shortTitle(product)} | Samsung`;
 
@@ -642,9 +657,9 @@
     applyImageFallbacks(target);
     applyImageFallbacks(actionBar || document);
 
-    if (state.trackedSku !== product.sku && window.SamsungAnalytics) {
-      state.trackedSku = product.sku;
-      window.SamsungAnalytics.trackProductView(product.sku, getParam("store"));
+    if (state.trackedKey !== productKey(product) && window.SamsungAnalytics) {
+      state.trackedKey = productKey(product);
+      window.SamsungAnalytics.trackProductView(product.sku, getParam("store"), product.id);
     }
   }
 
@@ -661,7 +676,7 @@
         </section>`;
       return;
     }
-    const product = findProduct(state.products, getParam("sku"));
+    const product = findProduct(state.products, getParam("id"), getParam("sku"));
     const existing = document.getElementById("feedback-frame");
     const frameSrc = state.config.feedbackFormUrl;
     target.innerHTML = `

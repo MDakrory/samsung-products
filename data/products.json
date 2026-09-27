@@ -1,5 +1,6 @@
 [
   {
+    "id": "2hqayvs6",
     "sku": "WD25DB8995BZYL",
     "active": true,
     "category": "washer",
@@ -52,6 +53,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "xc4dnmrc",
     "sku": "WD90F21BCSYL",
     "active": true,
     "category": "washer",
@@ -104,6 +106,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "jw6zmmwr",
     "sku": "WD18T6300GP/YL",
     "active": true,
     "category": "washer",
@@ -156,6 +159,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "nr5zhq6c",
     "sku": "WD16T6300GW/YL",
     "active": true,
     "category": "washer",
@@ -208,6 +212,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "vm8vm8mh",
     "sku": "WD12TP34DSX/YL",
     "active": true,
     "category": "washer",
@@ -266,6 +271,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "dqccef9v",
     "sku": "WD90T654DBN/YL",
     "active": true,
     "category": "washer",
@@ -318,6 +324,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "pwwezjt8",
     "sku": "WD90HG6U94BBYL",
     "active": true,
     "category": "washer",
@@ -370,6 +377,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "dtjzqek2",
     "sku": "WD90HG4U04BEYL",
     "active": true,
     "category": "washer",
@@ -410,6 +418,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "3mn7ex6s",
     "sku": "WD21B6400KE/YL",
     "active": true,
     "category": "washer",
@@ -444,6 +453,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "ur7ftkzb",
     "sku": "WF90F25ADSYL",
     "active": true,
     "category": "washer",
@@ -490,6 +500,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "bndtf3up",
     "sku": "WF21T6500GV/YL",
     "active": true,
     "category": "washer",
@@ -536,6 +547,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "26tsg2k6",
     "sku": "WF90T6500GV/YL",
     "active": true,
     "category": "washer",
@@ -582,6 +594,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "6fpgpbew",
     "sku": "WW90DG5U34ABYL",
     "active": true,
     "category": "washer",
@@ -628,6 +641,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "ct6ywfxh",
     "sku": "WA80F13B6LYL",
     "active": true,
     "category": "washer",
@@ -662,6 +676,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "ec6frnqk",
     "sku": "WA80F13B6WYL",
     "active": true,
     "category": "washer",
@@ -696,6 +711,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "45b2awfw",
     "sku": "WA80F16B9CYL",
     "active": true,
     "category": "washer",
@@ -730,6 +746,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "y24fn566",
     "sku": "WA80F16B9WYL",
     "active": true,
     "category": "washer",
@@ -764,6 +781,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "qbayzbkx",
     "sku": "WA80F18B9BYL",
     "active": true,
     "category": "washer",
@@ -798,6 +816,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "qqdewwnv",
     "sku": "WA21A8376GV/YL",
     "active": true,
     "category": "washer",
@@ -850,6 +869,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "pedjpgw8",
     "sku": "DV90F17CDSYL",
     "active": true,
     "category": "washer",
@@ -908,6 +928,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "eu2wu475",
     "sku": "DV90BB9445GBYL",
     "active": true,
     "category": "washer",
@@ -966,6 +987,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "5j33f7m9",
     "sku": "DV80T7220BX/YL",
     "active": true,
     "category": "washer",
@@ -1024,6 +1046,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "7ukukngf",
     "sku": "DV16T8741BV/YL",
     "active": true,
     "category": "washer",
@@ -1058,6 +1081,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "z2uktmbd",
     "sku": "RS57DG4000M9",
     "active": true,
     "category": "refrigerator",
@@ -1116,6 +1140,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "kr4jzspz",
     "sku": "RS90F65DDTZA",
     "active": true,
     "category": "refrigerator",
@@ -1174,6 +1199,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "wjfbefxx",
     "sku": "RS80F65GDTZA",
     "active": true,
     "category": "refrigerator",
@@ -1232,6 +1258,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "42gmhakb",
     "sku": "RS70F65QDTZA",
     "active": true,
     "category": "refrigerator",
@@ -1284,6 +1311,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "n88kqb8q",
     "sku": "RS62R5001M9/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1324,6 +1352,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "fu525wtj",
     "sku": "RH64DG53M3SLZA",
     "active": true,
     "category": "refrigerator",
@@ -1339,6 +1368,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "jnxbvhgq",
     "sku": "RT62K7050SL/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1379,6 +1409,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "2htzmajj",
     "sku": "RT58K7050SL/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1419,6 +1450,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "yqyxvnpm",
     "sku": "RT53DG7A10S9ZA",
     "active": true,
     "category": "refrigerator",
@@ -1459,6 +1491,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "6fzes8e4",
     "sku": "RT47CG6422WWZA",
     "active": true,
     "category": "refrigerator",
@@ -1511,6 +1544,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "rau4guqf",
     "sku": "RT42CG6420S9ZA",
     "active": true,
     "category": "refrigerator",
@@ -1563,6 +1597,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "qe4h97wr",
     "sku": "RT47CG6442S9Z",
     "active": true,
     "category": "refrigerator",
@@ -1615,6 +1650,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "b5ju6zub",
     "sku": "RT38CG6420S9ZA",
     "active": true,
     "category": "refrigerator",
@@ -1667,6 +1703,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "35euspew",
     "sku": "RT35CG5420WWZA",
     "active": true,
     "category": "refrigerator",
@@ -1719,6 +1756,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "rkcv7zjn",
     "sku": "RT53DG7A60B1ZA",
     "active": true,
     "category": "refrigerator",
@@ -1753,6 +1791,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "58etue84",
     "sku": "RT58K7110BS/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1805,6 +1844,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "5a6fatr8",
     "sku": "RR40H39G1TZA",
     "active": true,
     "category": "refrigerator",
@@ -1839,6 +1879,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "8bhvc9yc",
     "sku": "RZ40H32P1TZA387L",
     "active": true,
     "category": "refrigerator",
@@ -1873,6 +1914,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "eqzvjzez",
     "sku": "RZ32M71107F/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1907,6 +1949,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "qks2y2y6",
     "sku": "RR39M71407F/ZA",
     "active": true,
     "category": "refrigerator",
@@ -1935,6 +1978,7 @@
     "addedDate": "2026-09-27"
   },
   {
+    "id": "gqhx7n9n",
     "sku": "RF71DG90BESLZA",
     "active": true,
     "category": "refrigerator",
@@ -1981,6 +2025,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "9ugj9pub",
     "sku": "RF59A70T1SR/ZA",
     "active": true,
     "category": "refrigerator",
@@ -2015,6 +2060,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "c2m237fb",
     "sku": "AR60F24EADW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2061,6 +2107,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "tr3tjgew",
     "sku": "AR60F24FAAW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2107,6 +2154,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "qfstksu5",
     "sku": "AR60F18EADW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2153,6 +2201,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "8b6x35es",
     "sku": "AR60F18FAAW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2199,6 +2248,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "x7wwksyv",
     "sku": "AR60F24E1GW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2245,6 +2295,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "96nqfgnc",
     "sku": "AR60F24F1HW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2291,6 +2342,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "pypfat65",
     "sku": "AR60F18E1GW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2337,6 +2389,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "td6khg6e",
     "sku": "AR60F18F1HW/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2383,6 +2436,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "zaufw4ux",
     "sku": "AR50F24F1MH/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2429,6 +2483,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "d2zf27hs",
     "sku": "AR50F24E1MH/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2475,6 +2530,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "7dd8qsxz",
     "sku": "AR50F18F1MH/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2521,6 +2577,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "bu3qqx3e",
     "sku": "AR50F18E1MH/ZA",
     "active": true,
     "category": "air-conditioner",
@@ -2567,6 +2624,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "nt8nxhxj",
     "sku": "DW80H73YBFFYL",
     "active": true,
     "category": "dishwasher",
@@ -2613,6 +2671,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "nwuanwna",
     "sku": "DW80H72YBFFYL",
     "active": true,
     "category": "dishwasher",
@@ -2659,6 +2718,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "3azrr2wu",
     "sku": "DW70H73YMFRYL",
     "active": true,
     "category": "dishwasher",
@@ -2699,6 +2759,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "j92qw6k6",
     "sku": "NE63C6317SS/ZA",
     "active": true,
     "category": "oven",
@@ -2739,6 +2800,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "k9hsdbdt",
     "sku": "NE63C6317SG/ZA",
     "active": true,
     "category": "oven",
@@ -2779,6 +2841,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "2ds76ecv",
     "sku": "NE63C6517SS/ZA",
     "active": true,
     "category": "oven",
@@ -2819,6 +2882,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "qcr6ruwz",
     "sku": "NE63C6517SG/ZA",
     "active": true,
     "category": "oven",
@@ -2859,6 +2923,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "5h9bsnua",
     "sku": "MS32DG4504ATZA",
     "active": true,
     "category": "microwave",
@@ -2899,6 +2964,7 @@
     "addedDate": "2026-05-25"
   },
   {
+    "id": "jch598qh",
     "sku": "MS23K3515AK/ZA",
     "active": true,
     "category": "microwave",

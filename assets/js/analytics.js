@@ -42,13 +42,14 @@
     }
   }
 
-  function trackProductView(sku, storeId) {
+  function trackProductView(sku, storeId, productId = "") {
     if (typeof window.gtag === "undefined") return;
-    window.gtag("event", "product_page_view", { product_sku: sku });
+    window.gtag("event", "product_page_view", { product_sku: sku, product_id: productId });
     if (storeId) {
       window.gtag("event", "store_qr_scan", {
         store_id: storeId,
         product_sku: sku,
+        product_id: productId,
         event_category: "QR Traffic",
       });
       sessionStorage.setItem("utm_store", storeId);

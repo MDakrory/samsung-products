@@ -40,6 +40,8 @@ Unsaved changes are kept as a draft in the browser until you save, so a refresh 
 
 The Excel import accepts the admin's own template and the "Creation - New Content" sheet format (SKU, Product, Sub Category, Long Description/Title, Short Ar/EN, Description, Highlight 1..7). A highlight cell's first line is the title; the following lines are the body.
 
+The export includes an `ID` column. Keep it when re-importing: rows are matched by ID first, so editing the SKU cell renames that product instead of creating a new one. Rows without an ID are matched by SKU, and new products get an ID automatically.
+
 ## Remove / Hide a Product
 
 Hide is recommended: set `"active": false` in `data/products.json`. The product disappears from the homepage counts, category pages, related products, and QR browsing, while the data remains preserved.
@@ -63,13 +65,18 @@ Copy all files to any static web host such as Netlify, Vercel, cPanel, Apache, o
 Use the QR codes section of the admin panel to generate QR URLs in this format:
 
 ```text
-product.html?sku={SKU}&store={storeId}
+product.html?id={productId}&store={storeId}
 ```
+
+Every product has a permanent random `id` (for example `z2uktmbd`) in `data/products.json`. Links and QR codes use this id, not the model number, so the SKU can be corrected or renamed later without reprinting QR codes. The admin creates the id automatically for new products and never changes it.
+
+When a SKU is renamed in the admin (editor or Excel import with the `ID` column), the old SKU is kept in `formerSkus`, so older `product.html?sku={SKU}` links and QR codes still open the right product and are redirected to the id link.
 
 When a customer scans a store QR, `product.html` sends a GA4 `store_qr_scan` event with:
 
 - `store_id`
 - `product_sku`
+- `product_id`
 - `event_category: QR Traffic`
 
 In Google Analytics, open Reports -> Engagement -> Events -> `store_qr_scan`, then group by the `store_id` parameter.
