@@ -410,6 +410,40 @@
     "addedDate": "2026-05-25"
   },
   {
+    "sku": "WD21B6400KE/YL",
+    "active": true,
+    "category": "washer",
+    "subcategory": "combo",
+    "titleAr": "سامسونج غسالة كومبو، 21 كجم + 12كجم، مدعومة بتقنية Bespoke AI تحميل أمامي، SmartThings، محرك عاكس رقمي، لون بيج",
+    "titleEn": "Samsung Bespoke AI, Washer Dryer AI Front-load, 21kg + 12kg, SmartThings, Direct Drive , Beige.",
+    "shortTitleAr": "سامسونج غسالة كومبو، 21+12 كجم، بيج",
+    "shortTitleEn": "Samsung Bespoke AI, Washer Dryer AI Front-load, 21kg + 12KG, Beige",
+    "descriptionAr": "تجربة غسيل فعّالة مع غسالة ومجفف بسعة 21+12 كجم (21 كجم غسيل / 12 كجم تجفيف). مصممة لإزالة البقع وحماية الأقمشة بتقنية Eco Bubble™، مدعومة بتحكم ذكي AI Control.",
+    "descriptionEn": "Experience efficient washing with a 21+12 kg washer combo (21 kg wash / 12 kg dry). Designed to fight stains and protect fabric with Eco Bubble™, supported by intelligent washing AI Control.",
+    "highlights": [
+      {
+        "titleAr": "يزيل البقع ويحافظ على الأقمشة بتقنية",
+        "titleEn": "Fights stains, protects fabric",
+        "bodyAr": "Eco Bubble™",
+        "bodyEn": "Eco Bubble™"
+      },
+      {
+        "titleAr": "غسيل ذكي مع AI Control",
+        "titleEn": "Intelligent washing",
+        "bodyAr": "غسيل ذكي يتكيف مع استخدامك ويقترح أفضل الإعدادات",
+        "bodyEn": "AI Control\nSmart washing that learns your habits and suggests the best cycles"
+      },
+      {
+        "titleAr": "توزيع تلقائي للمنظف",
+        "titleEn": "Auto dispense",
+        "bodyAr": "يوزع الكمية المناسبة من المنظف تلقائيا في كل غسلة لضمان غسيل فعال",
+        "bodyEn": "Automatically delivers the right amount of detergent every time for efficient washing."
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
+  },
+  {
     "sku": "WF90F25ADSYL",
     "active": true,
     "category": "washer",
@@ -990,6 +1024,40 @@
     "addedDate": "2026-05-25"
   },
   {
+    "sku": "DV16T8741BV/YL",
+    "active": true,
+    "category": "washer",
+    "subcategory": "dryer",
+    "titleAr": "سامسونج نشافة، 16كجم، مدعومة بتقنية Bespoke AI بتقنية المضخة الحرارية، تحكم بالذكاء الاصطناعي،محرك عاكس رقمي، لون أسود",
+    "titleEn": "Samsung Bespoke AI, Heat Pump Dryer, 16Kg, AI Control, Direct Drive, Black.",
+    "shortTitleAr": "سامسونج نشافة،16كجم، أسود",
+    "shortTitleEn": "Samsung Bespoke AI, Heat Pump Dryer, 16Kg, Black.",
+    "descriptionAr": "تجربة تجفيف فعّالة مع مجفف بسعة 16كجم. مصمم بأداء تجفيف ذكي، يوفر تجفيفًا عالي الكفاءة من خلال Hybrid Heat Pump Technology للاستخدام اليومي.",
+    "descriptionEn": "Experience efficient drying with a 16 kg dryer. Designed with intelligent dry performance, delivering efficient drying with Hybrid Heat Pump technology for everyday use.",
+    "highlights": [
+      {
+        "titleAr": "تقنية المضخة الحرارية الهجينة",
+        "titleEn": "Hybrid heat pump technology",
+        "bodyAr": "تستهلك طاقة أقل بفضل تقنية المضخة الحرارية",
+        "bodyEn": "Use less electricity with heatpump technology."
+      },
+      {
+        "titleAr": "تجفيف ذكي بدعم الذكاء الإصطناعي",
+        "titleEn": "Intelligent drying",
+        "bodyAr": "",
+        "bodyEn": "Dry laundry easily and effectively with AI Control."
+      },
+      {
+        "titleAr": "محرك Direct Drive",
+        "titleEn": "Direct Drive",
+        "bodyAr": "كفاءة عالية في الأداء",
+        "bodyEn": "High efficiency motor."
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
+  },
+  {
     "sku": "RS57DG4000M9",
     "active": true,
     "category": "refrigerator",
@@ -1254,6 +1322,21 @@
     ],
     "imageUrl": "https://image-us.samsung.com/SamsungUS/home-appliances/refrigerators/RS62R5001M9ZA/RS62R5001M9ZA_001_Front.jpg",
     "addedDate": "2026-05-25"
+  },
+  {
+    "sku": "RH64DG53M3SLZA",
+    "active": true,
+    "category": "refrigerator",
+    "subcategory": "sbs",
+    "titleAr": "ثلاجة سامسونج، باب عرض بابين، SpaceMax™ Technology سعة 610 لتر / 21.6 قدم",
+    "titleEn": "Samsung Side By Side Refrigerator with Food Showcase and SpaceMax™ Technology, 50/60 Hz, 610L / 21.6 Cu.ft",
+    "shortTitleAr": "ثلاجة سامسونج، باب عرض بابين، سعة 610 لتر / 21.6 قدم",
+    "shortTitleEn": "Samsung Side By Side Refrigerator with Food Showcase, 610L / 21.6 Cu.ft",
+    "descriptionAr": "",
+    "descriptionEn": "",
+    "highlights": [],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
   },
   {
     "sku": "RT62K7050SL/ZA",
@@ -1636,6 +1719,92 @@
     "addedDate": "2026-05-25"
   },
   {
+    "sku": "RT53DG7A60B1ZA",
+    "active": true,
+    "category": "refrigerator",
+    "subcategory": "tmf",
+    "titleAr": "سامسونج، ثلاجة بفريزر علوي، سعة 530 لتر/18.7 قدم مكعب، تبريد مزدوج بلس، صانع ثلج تويست، تحكم ذكي بالذكاء الاصطناعي، خاصية عدم التجمد، لون فضي",
+    "titleEn": "Samsung, Top freezer Refrigerator 530L /18.7 Cu.ft, Twin Cooling Plus, Twist Ice Maker, Smart AI Control,No Frost, Inox silver color",
+    "shortTitleAr": "سامسونج، ثلاجة بفريزر علوي، سعة 530 لتر/18.7 قدم مكعب",
+    "shortTitleEn": "Samsung, Top freezer Refrigerator 530L /18.7 Cu.ft",
+    "descriptionAr": "",
+    "descriptionEn": "",
+    "highlights": [
+      {
+        "titleAr": "نظام التبريد المزدوج بلس",
+        "titleEn": "Twin Cooling Plus",
+        "bodyAr": "يحافظ نظام التبريد المزدوج بلس على الطعام في الظروف المثالية ويحمي نكهته من خلال منع اختلاط الروائح بين الحجرات.",
+        "bodyEn": "preserves food in the ideal conditions and protects its flavor by preventing odors from mixing between compartments"
+      },
+      {
+        "titleAr": "5 أوضاع تحويل يمكنك تحويل الفريزر الخاص بك إلى ثلاجة بسهولة",
+        "titleEn": "5 Conversion Modes Easily convert your freezer into a fridge",
+        "bodyAr": "",
+        "bodyEn": ""
+      },
+      {
+        "titleAr": "مساحة داخلية أكبر",
+        "titleEn": "More space inside",
+        "bodyAr": "تقنية ™SpaceMax بتصميم إطار نحيف لمساحة أوسع من الداخل",
+        "bodyEn": "Large Capacity with SpaceMax™"
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
+  },
+  {
+    "sku": "RT58K7110BS/ZA",
+    "active": true,
+    "category": "refrigerator",
+    "subcategory": "tmf",
+    "titleAr": "ثلاجة سامسونج، فريزر علوي، سعة 583 لتر / 20.6 قدم (422 لتر تبريد / 161 لتر تجميد)، تبريد شامل، تبريد وتجميد سريع، تحويل 5 في 1، مضاد للبكتيريا، SpaceMax، لون فضي",
+    "titleEn": "Samsung Top freezer Refrigerator, 20.6 Cu.ft/583L \n(422 L fridge / 161 L freezer). Twin Cooling, Power Freezing and Cooling, Convertible 5-in-1 , Anti-Bacterial Protector, SpaceMax, Steel color",
+    "shortTitleAr": "ثلاجة سامسونج، فريزر علوي، سعة 583 لتر / 20.6 قدم، فضي",
+    "shortTitleEn": "Samsung Top freezer Refrigerator, 20.6 Cu.ft/583L, Silver Matt Color",
+    "descriptionAr": "تجربة تبريد ثابتة وموثوقة مع ثلاجة باب علوي بسعة 583 لتر / 20.6 قدم (422 لتر ثلاجة / 161 لتر فريزر). توفر مساحة واسعة مع 5 أوضاع تحويل حسب الرغبة، مدعومة بتقنية Twin Cooling Plus للحفاظ على الانتعاش والتحكم في الروائح.",
+    "descriptionEn": "Experience consistent cooling with a 583 L / 20.6Cu.ft top mount refrigerator (422 L fridge / 161 L freezer). Featuring flexible storage with 5 Conversion Modes on demand, powered by Twin Cooling Plus for enhanced freshness and odor control.",
+    "highlights": [
+      {
+        "titleAr": "ترطيب ونضارة في جميع أجزاء الثلاجة",
+        "titleEn": "Moisture-Full Freshness all over the fridge",
+        "bodyAr": "",
+        "bodyEn": ""
+      },
+      {
+        "titleAr": "مساحة داخلية أكبر",
+        "titleEn": "More space inside",
+        "bodyAr": "تقنية ™SpaceMax بتصميم إطار نحيف لمساحة أوسع من الداخل",
+        "bodyEn": "Large Capacity with SpaceMax™"
+      },
+      {
+        "titleAr": "5 أوضاع تحويل حسب الرغبة",
+        "titleEn": "5 Conversion Modes Easily convert your freezer into a fridge",
+        "bodyAr": "",
+        "bodyEn": ""
+      },
+      {
+        "titleAr": "حماية مضادة للبكتيريا",
+        "titleEn": "Anti bacteria protector",
+        "bodyAr": "يقلل من البكتيريا ليحافظ على نظافة وانتعاش الداخل",
+        "bodyEn": "Reduces bacteria for a cleaner and fresher interior."
+      },
+      {
+        "titleAr": "تبريد وتجميد فوري",
+        "titleEn": "Power Cool & Freezer function",
+        "bodyAr": "تبريد المشروبات وتجميد الطعام بسرعة ليكون جاهزًا عند الحاجة",
+        "bodyEn": "Instantly cool drinks and freeze food so it’s ready when you need it."
+      },
+      {
+        "titleAr": "موزع مياه",
+        "titleEn": "Water Dispenser",
+        "bodyAr": "",
+        "bodyEn": ""
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
+  },
+  {
     "sku": "RR40H39G1TZA",
     "active": true,
     "category": "refrigerator",
@@ -1702,6 +1871,68 @@
     ],
     "imageUrl": "https://image-us.samsung.com/SamsungUS/home-appliances/refrigerators/RZ40H32P1TZA387L/RZ40H32P1TZA387L_001_Front.jpg",
     "addedDate": "2026-05-25"
+  },
+  {
+    "sku": "RZ32M71107F/ZA",
+    "active": true,
+    "category": "refrigerator",
+    "subcategory": "1door",
+    "titleAr": "سامسونج، ثلاجة باب واحد، سعة 315 لتر / 11.1 قدم، تبريد أحادي، باب قابل للعكس، ستانلس ستيل",
+    "titleEn": "Samsung, one door freezer, 315L / 11.1 Cu.ft, mono cooling, reversible door, Refined steel color",
+    "shortTitleAr": "سامسونج، ثلاجة باب واحد، سعة 315 لتر / 11.1 قدم",
+    "shortTitleEn": "Samsung, one door freezer, 315L / 11.1 Cu.ft",
+    "descriptionAr": "",
+    "descriptionEn": "",
+    "highlights": [
+      {
+        "titleAr": "تبريد شامل",
+        "titleEn": "All-around Cooling",
+        "bodyAr": "يُبرّد بالتساوي في جميع الاماكن",
+        "bodyEn": "Cools evenly all over"
+      },
+      {
+        "titleAr": "تجميد وتبريد فوري",
+        "titleEn": "Power Freeze & Cool",
+        "bodyAr": "استمتع بأداء سريع للتبريد",
+        "bodyEn": ""
+      },
+      {
+        "titleAr": "باب قابل للعكس",
+        "titleEn": "Reversible door",
+        "bodyAr": "",
+        "bodyEn": ""
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
+  },
+  {
+    "sku": "RR39M71407F/ZA",
+    "active": true,
+    "category": "refrigerator",
+    "subcategory": "1door",
+    "titleAr": "سامسونج، ثلاجة باب واحد، سعة 387 لتر / 13.6 قدم، تبريد أحادي، باب قابل للعكس، لون ستانلس ستيل",
+    "titleEn": "Samsung, one door fridge, 387L / 13.6 Cu.ft, mono cooling, reversible door, Refined steel color",
+    "shortTitleAr": "سامسونج، ثلاجة باب واحد، سعة 387 لتر / 13.6 قدم",
+    "shortTitleEn": "Samsung, one door fridge, 387L / 13.6 Cu.ft",
+    "descriptionAr": "",
+    "descriptionEn": "",
+    "highlights": [
+      {
+        "titleAr": "تبريد شامل",
+        "titleEn": "All-around Cooling",
+        "bodyAr": "يُبرّد بالتساوي في جميع الاماكن",
+        "bodyEn": "Cools evenly all over"
+      },
+      {
+        "titleAr": "باب قابل للعكس",
+        "titleEn": "Reversible door",
+        "bodyAr": "",
+        "bodyEn": ""
+      }
+    ],
+    "imageUrl": "",
+    "addedDate": "2026-09-27"
   },
   {
     "sku": "RF71DG90BESLZA",
